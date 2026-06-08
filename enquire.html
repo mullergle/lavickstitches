@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Vick Stitches | Luxury Fashion House</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f8f6f2;
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+}
+
+/* HEADER */
+
+.luxury-header{
+    background:#f4f1ec;
+    padding:30px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid rgba(0,0,0,0.08);
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.logo-mark{
+    font-family:'Cormorant Garamond',serif;
+    font-size:95px;
+    font-weight:300;
+    color:#666874;
+    line-height:1;
+}
+
+.brand-text h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:65px;
+    font-weight:300;
+    letter-spacing:10px;
+    color:#666874;
+    line-height:1;
+}
+
+.brand-text p{
+    margin-top:8px;
+    font-size:20px;
+    letter-spacing:10px;
+    color:#666874;
+    font-weight:300;
+}
+
+.menu-icon{
+    font-size:70px;
+    color:#666874;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    height:400px;
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h2{
+    color:white;
+    font-size:70px;
+    font-weight:300;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+/* FORM */
+
+.container{
+    max-width:1000px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+.intro{
+    text-align:center;
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:50px;
+    color:#444;
+}
+
+.form-group{
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.required{
+    color:red;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+}
+
+.col{
+    flex:1;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:18px;
+    border:1px solid #d6d6d6;
+    background:white;
+    font-size:16px;
+}
+
+textarea{
+    min-height:180px;
+    resize:vertical;
+}
+
+.radio-group{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.radio-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:17px;
+}
+
+.radio-item input{
+    width:auto;
+}
+
+.submit-btn{
+    width:100%;
+    padding:20px;
+    background:#666874;
+    color:white;
+    border:none;
+    font-size:18px;
+    letter-spacing:2px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#4f515d;
+}
+
+/* FOOTER */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .luxury-header{
+        padding:20px;
+    }
+
+    .brand{
+        gap:10px;
+    }
+
+    .logo-mark{
+        font-size:55px;
+    }
+
+    .brand-text h1{
+        font-size:26px;
+        letter-spacing:3px;
+    }
+
+    .brand-text p{
+        font-size:10px;
+        letter-spacing:3px;
+    }
+
+    .menu-icon{
+        font-size:40px;
+    }
+
+    .hero{
+        height:280px;
+    }
+
+    .hero h2{
+        font-size:38px;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    .intro{
+        font-size:18px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header class="luxury-header">
+
+    <div class="brand">
+
+        <div class="logo-mark">
+            LVS
+        </div>
+
+        <div class="brand-text">
+            <h1>LA VICK STITCHES</h1>
+            <p>LUXURY FASHION HOUSE</p>
+        </div>
+
+    </div>
+
+    <div class="menu-icon">
+        ☰
+    </div>
+
+</header>
+
+<section class="hero">
+    <h2>Make An Enquiry</h2>
+</section>
+
+<div class="container">
+
+    <p class="intro">
+        Please fill in the form below to make an enquiry and a member of our team will get back to you shortly.
+    </p>
+
+    <form>
+
+        <div class="form-group">
+
+            <label>
+                Name <span class="required">*</span>
+            </label>
+
+            <div class="row">
+
+                <div class="col">
+                    <input type="text" placeholder="First Name">
+                </div>
+
+                <div class="col">
+                    <input type="text" placeholder="Last Name">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label>Email <span class="required">*</span></label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label>WhatsApp Number <span class="required">*</span></label>
+            <input type="tel" placeholder="+234 802 123 4567">
+        </div>
+
+        <div class="form-group">
+            <label>
+                When do you need your outfit(s)?
+                <span class="required">*</span>
+            </label>
+
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+
+            <label>
+                Which service are you interested in?
+                <span class="required">*</span>
+            </label>
+
+            <div class="radio-group">
+
+                <label class="radio-item">
+                    <input type="radio" name="service">
+                    Bespoke Bridal Dress
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="service">
+                    Wedding Guest Outfit
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="service">
+                    Traditional Attire
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="service">
+                    Reception Dress
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="service">
+                    Corporate Wear
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="service">
+                    Alterations & Fittings
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Additional Information</label>
+
+            <textarea placeholder="Tell us more about your desired outfit, event date, measurements, fabric preference or inspiration."></textarea>
+
+        </div>
+
+        <button type="submit" class="submit-btn">
+            SUBMIT ENQUIRY
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+    © 2025 La Vick Stitches | Luxury Fashion House
+</footer>
+
+</body>
+</html>
